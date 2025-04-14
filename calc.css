@@ -1,0 +1,114 @@
+:root { 
+    --dark: #26233a;
+    --pink: #eb6f92;
+    --gold: #f6c177;
+    --ocean: #9ccfd8;
+    --purple: #c4a7e7;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle, var(--pink), var(--purple));
+  }
+  
+  .calculator {
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: var(--dark);
+    border: 1px solid var(--gold);
+    display: flex;
+    flex-direction: column;
+    /* color: var(--text); */
+  }
+  
+  .calc {
+    padding: 20px;
+  }
+  
+  .screen {
+    width: 100%;
+    height: 100px;
+    text-align: right;
+    font-size: 24px;
+    padding: 10px;
+    background-color: var(--ocean);
+    border: 1px solid var(--ocean);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: var(--dark);
+  }
+  
+  .keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .key {
+    padding: 15px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    /* transition: background-color 0.2s; */
+    background-color: var(--dark);
+    border: 1px solid var(--pink);
+    color: var(--pink);
+  }
+  
+  .key:hover {
+    color: var(--gold);
+    border: 1px solid var(--gold);
+  }
+  
+  .operator {
+    background-color: var(--dark);
+    border: 1px solid var(--pink);
+    color: var(--pink);
+  }
+  
+  .operator:hover {
+    color: var(--gold);
+    border: 1px solid var(--gold);
+  }
+  
+  .equal-sign {
+    background-color: var(--dark);
+    color: var(--pink);
+    border: 1px solid var(--pink);
+  }
+  
+  .equal-sign:hover {
+    color: var(--gold);
+    border: 1px solid var(--gold);
+  }
+  
+  .wide {
+    grid-column: span 2;
+  }
+  
+  .footer {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--dark);
+    padding: 16px;
+    text-transform: uppercase;
+  }
+  
